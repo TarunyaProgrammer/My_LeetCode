@@ -14,7 +14,7 @@ class Solution:
         queue = deque([root])
         while queue:
             level_size = len(queue)
-            print("level_size", level_size)
+            # print("level_size", level_size)
             curr = []
 
             for _ in range(level_size):
@@ -25,6 +25,6 @@ class Solution:
                     queue.append(node.left)
                 if node.right:
                     queue.append(node.right)
-                print('curr_level', curr)
+                # print('curr_level', curr)
             res.append(curr)
         return res
